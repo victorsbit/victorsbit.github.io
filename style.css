@@ -35,6 +35,7 @@ body {
   text-decoration: none;
 }
 
+
 @media screen and (max-width: 1024px) {
   .header-container {
     font-size: 1.2em;
@@ -72,6 +73,23 @@ main {
 
 .card-img {
   width: 200px;
+}
+
+@media screen and (min-width: 1025px) {
+  .hero {
+    justify-content: center;
+  }
+  
+  .profile-pic {
+    padding: 0;
+  }
+
+  .about-me {
+    width: 40%;
+    padding: 50px;
+    text-align: justify;
+    text-justify: distribute;
+  }
 }
 
 @media screen and (max-width: 1024px) {
