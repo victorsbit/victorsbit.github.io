@@ -19,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
   background: #020024;
-  border-top: gray solid 5px;
   font-size: 1.5em;
   position: fixed;
 }
