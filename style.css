@@ -18,9 +18,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #2d3142;
-  border-top: #ef8354 solid 5px;
+  background: #020024;
+  border-top: gray solid 5px;
   font-size: 1.5em;
+  position: fixed;
 }
 
 .header-nav {
@@ -50,8 +51,11 @@ main {
 }
 
 .hero {
-  background-color: #FFFFFF;
+  background: rgb(235,79,79);
+  background: linear-gradient(0deg, rgba(235,79,79,1) 10%, rgba(2,0,36,1) 80%);
+  color: white;
   width: 100%;
+  height: 75vh;
   padding: 100px;
   display: flex;
   justify-content: space-evenly;
@@ -72,7 +76,7 @@ main {
 }
 
 .card-img {
-  width: 200px;
+  width: 225px;
 }
 
 @media screen and (min-width: 1025px) {
@@ -132,11 +136,14 @@ main {
 .main-container {
   width: 100%;
   padding: 100px;
-  background-color: #e5e5e5;
+  /* background: rgb(2,0,36,1);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 10%, rgba(235,79,79) 80%); */
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  height: 75vh;
 }
 
 hr {
@@ -151,12 +158,16 @@ hr {
 }
 
 .skill-card {
+  /* background-color: rgba(235,79,79,1); */
   text-align: center;
-  background-color: #BFC0C0;
-  border-radius: 20px;
   margin: 15px;
-  padding: 10px;
   box-shadow: 5px 5px 2px 0 gray;
+  transition: 0.25s;
+}
+
+.span {
+  background-color: lightgray;
+  padding: 15px;
 }
 
 .skill-card:hover {
@@ -181,17 +192,18 @@ main {
 }
 
 footer {
-  background-color: #2d3142;
-  height: 60px;
+  background-color: lightgray;
+  /* background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(255,255,255,1) 70%); */
+  height: 20vh;
   display: flex;
-  color: white;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding: 20px;
 }
 
 .icon {
-  width: 25px;
+  width: 35px;
   margin: 5px;
 }
 

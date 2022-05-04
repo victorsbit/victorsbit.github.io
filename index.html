@@ -17,8 +17,7 @@
   <header class="header-container">
       <nav class="header-nav">
         <a href="#">Início</a>
-        <a href="#">Projetos</a>
-        <a href="#">Sobre mim</a>
+        <a href="#skills">Projetos</a>
       </nav>
   </header>
 
@@ -29,25 +28,29 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non quibusdam ducimus nemo pariatur numquam quos molestias, distinctio odio perferendis, corporis porro assumenda cupiditate. Illum voluptatum sed molestias fugit cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non quibusdam ducimus nemo pariatur numquam quos molestias, distinctio odio perferendis, corporis porro assumenda cupiditate.</p>
       </section>
       <aside class="profile">
-        <img src="images/profile.jpg" alt="Foto de perfil" class="profile-pic">
+        <img src="images/placeholder-image.png" alt="Foto de perfil" class="profile-pic">
       </aside>
     </section>
 
     <section class="main-container">
-      <h1 class="title-skill">Habilidades <strike>(em desenvolvimento)</strike></h1>
+      <h1 class="title-skill" id="skills">Habilidades <strike>(em desenvolvimento)</strike></h1>
       <hr>
       <section class="skill-container">
         <div class="skill-card">
-          <img src="images/html5.png" alt="HTML5" class="card-img">
-          <h2>HTML</h2>
+          <img src="images/html.svg" alt="HTML5 icon" class="card-img">
+          <div class="span"><span>HTML</span></div>
         </div>
         <div class="skill-card">
-          <img src="images/js.png" alt="JS" class="card-img">
-          <h2>JS</h2>
+          <img src="images/js.svg" alt="JS icon" class="card-img">
+          <div class="span"><span>JavaScript</span></div>
         </div>
         <div class="skill-card">
-          <img src="images/css.png" alt="CSS" class="card-img">
-          <h2>CSS</h2>
+          <img src="images/react.svg" alt="React icon" class="card-img">
+          <div class="span"><span>React</span></div>
+        </div>
+        <div class="skill-card">
+          <img src="images/css.svg" alt="CSS icon" class="card-img">
+          <div class="span"><span>CSS</span></div>
         </div>
       </section>
     </section>
@@ -55,9 +58,9 @@
   </main>
 
   <footer>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/victor-stettner/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn profile" class="icon"></a>
-      <a href="https://github.com/victorsbit" target="_blank"><img src="images/github.png" alt="GitHub profile" class="icon"></a>
+    <div id="socials">
+      <a href="https://www.linkedin.com/in/victor-stettner/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn profile" class="icon"></a>
+      <a href="https://github.com/victorsbit" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon"></a>
     </div>
     <p><i>Made with semantic HTML and Flexbox</i></p>
   </footer>
