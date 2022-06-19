@@ -1,215 +1,127 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: 'Raleway', sans-serif;
+  height: 100vh;
 }
 
-.header-container {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: center;
+.main-header {
   align-items: center;
-  background: #020024;
-  font-size: 1.5em;
-  position: fixed;
-}
-
-.header-nav {
-  width: 100%;
+  background-color: rgb(20, 18, 22);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  min-height: 80px;
+  font-size: 1.10em;
 }
 
-.header-nav a {
-  padding: 15px;
+.main-header a {
   color: white;
+  margin: 0px 75px;
   text-decoration: none;
 }
 
-
-@media screen and (max-width: 1024px) {
-  .header-container {
-    font-size: 1.2em;
+@media screen and (max-width: 500px) {
+  .main-header {
+    justify-content: center;
   }
-}
 
-main {
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
+  .main-header a {
+    margin: 20px;
+  }
 }
 
 .hero {
-  background: rgb(235,79,79);
-  background: linear-gradient(0deg, rgba(235,79,79,1) 10%, rgba(2,0,36,1) 80%);
-  color: white;
-  width: 100%;
-  height: 75vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  background-color: rgb(20, 18, 22);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: center;
+  width: 100%;
 }
 
 .about-me {
-  width: 50%;
-  padding: 20px;
-  text-align: justify;
-  text-justify: distribute;
+  margin-bottom: 80px;
+  text-align: center;
 }
 
-.profile-pic {
-  width: 275px;
-  padding: 20px;
-  border-radius: 150px;
+.hero a {
+  text-decoration: none;
+  color: white;
 }
 
-.card-img {
-  width: 225px;
+.welcome {
+  font-size: 2.5em;
 }
 
-@media screen and (min-width: 1025px) {
-  .hero {
+.about {
+  font-size: 1.75em;
+}
+
+.orange {
+  color: rgb(255, 195, 0);
+}
+
+.scroll-down {
+  justify-self: flex-end;
+}
+
+.scroll-down img {
+  width: 125px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-header {
     justify-content: center;
   }
-  
-  .profile-pic {
-    padding: 0;
+
+  .main-header a {
+    margin: 20px;
   }
 
-  .about-me {
-    width: 40%;
-    padding: 50px;
-    text-align: justify;
-    text-justify: distribute;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .hero {
-    width: 100%;
-    padding: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+  .welcome {
+    font-size: 2em;
   }
 
-  .profile {
-    order: 1;
-  }
-
-  .about-me {
-    order: 2;
-  }
-
-  .profile-pic {
-    width: 200px;
-    padding: 10px;
-  }
-
-  .about-me {
-    width: 75%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .hero {
-    padding: 20px; 
-  }
-
-  .about-me {
-    width: 100%;
+  .about {
+    font-size: 1.25em;
   }
 }
 
 .main-container {
-  width: 100%;
-  padding: 100px;
-  /* background: rgb(2,0,36,1);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 10%, rgba(235,79,79) 80%); */
-  background-color: lightgray;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.project-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.project-card {
+  border: black solid 1px;
+  margin-top: 20px;
   text-align: center;
-  height: 75vh;
 }
 
-hr {
-  width: 10%;
-  height: 4px;
-  background-color: #2d3142;
-  margin: 10px 0 50px 0;
+.card-image {
+  width: 350px;
 }
 
-.skill-container {
+.main-footer {
+  background-color: rgb(20, 18, 22);
+  color: white;
   display: flex;
-}
-
-.skill-card {
-  /* background-color: rgba(235,79,79,1); */
-  text-align: center;
-  margin: 15px;
-  box-shadow: 5px 5px 2px 0 gray;
-  transition: 0.25s;
-}
-
-.span {
-  background-color: lightgray;
-  padding: 15px;
-}
-
-.skill-card:hover {
-  box-shadow: 10px 10px 5px 5px gray;
-}
-
-@media screen and (max-width: 1024px) {
-  .card-img {
-    width: 150px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .skill-container {
-    flex-direction: column;
-  }
-}
-
-main {
-  background-color: #e5e5e5;
-  flex: 1;
-}
-
-footer {
-  border-top: gray solid 2px;
-  background-color: lightgray;
-  /* background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(255,255,255,1) 70%); */
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-}
-
-.icon {
-  width: 35px;
-  margin: 5px;
-}
-
-@media screen and (max-width: 400px) {
-  footer {
-    font-size: 0.8em;
-    justify-content: space-around;
-  }
+  justify-content: space-around;
+  min-height: 80px;
+  font-size: 1.10em;
 }

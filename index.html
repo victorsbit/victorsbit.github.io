@@ -1,70 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-  <title>Portfólio</title>
-</head>
-
-<body>
-
-  <header class="header-container">
-      <nav class="header-nav">
-        <a href="#">Início</a>
-        <a href="#skills">Projetos</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div>
+        <a href="#">
+          Home
+        </a>
+      </div>
+      <nav>
+        <a href="#">
+          GitHub
+        </a>
+        <a href="#">
+          LinkedIn
+        </a>
       </nav>
-  </header>
+    </header>
 
-  <main>
-
-    <section class="hero">
-      <section class="about-me">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non quibusdam ducimus nemo pariatur numquam quos molestias, distinctio odio perferendis, corporis porro assumenda cupiditate. Illum voluptatum sed molestias fugit cum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam non quibusdam ducimus nemo pariatur numquam quos molestias, distinctio odio perferendis, corporis porro assumenda cupiditate.</p>
-      </section>
-      <aside class="profile">
-        <img src="images/placeholder-image.png" alt="Foto de perfil" class="profile-pic">
-      </aside>
-    </section>
-
-    <section class="main-container">
-      <h1 class="title-skill" id="skills">Habilidades <strike>(em desenvolvimento)</strike></h1>
-      <hr>
-      <section class="skill-container">
-        <div class="skill-card">
-          <img src="images/html.svg" alt="HTML5 icon" class="card-img">
-          <div class="span"><span>HTML</span></div>
+    <main>
+      <section class="hero">
+        <div class="about-me">
+          <span class="welcome">Olá! Seja bem-vindo(a) ao meu portfólio</span>
+          <br />
+          <span class="about">Meu nome é <span class="orange">Victor</span>, e eu sou um estudante de <span class="orange">Desenvolvimento Web Full Stack</span></span>
         </div>
-        <div class="skill-card">
-          <img src="images/js.svg" alt="JS icon" class="card-img">
-          <div class="span"><span>JavaScript</span></div>
-        </div>
-        <div class="skill-card">
-          <img src="images/react.svg" alt="React icon" class="card-img">
-          <div class="span"><span>React</span></div>
-        </div>
-        <div class="skill-card">
-          <img src="images/css.svg" alt="CSS icon" class="card-img">
-          <div class="span"><span>CSS</span></div>
+        <div class="scroll-down">
+          <a href="#main-container">
+            <img src="assets/dropdown-arrow.png" />
+          </a>
         </div>
       </section>
-    </section>
-
-  </main>
-
-  <footer>
-    <div id="socials">
-      <a href="https://www.linkedin.com/in/victor-stettner/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" alt="LinkedIn profile" class="icon"></a>
-      <a href="https://github.com/victorsbit" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon"></a>
-    </div>
-    <p><i>Made with semantic HTML and Flexbox</i></p>
-  </footer>
-
-</body>
-
+      <section class="main-container" id="main-container">
+        <div class="project-container">
+          <div class="project-card">
+            <h2>Projeto 1</h2>
+            <img src="assets/placeholder-image.png" class="card-image" />
+          </div>
+          <div class="project-card">
+            <h2>Projeto 2</h2>
+            <img src="assets/placeholder-image.png" class="card-image" />
+          </div>
+          <div class="project-card">
+            <h2>Projeto 3</h2>
+            <img src="assets/placeholder-image.png" class="card-image" />
+          </div>
+        </div>
+      </section>
+      <footer class="main-footer">
+        <div class="footer">
+          <span>Footer</span>
+        </div>
+        <div class="footer">
+          <span>Footer</span>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
